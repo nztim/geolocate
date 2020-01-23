@@ -1,0 +1,14 @@
+{
+    "name": "nztim/geo",
+    "description": "Access the geolocation API",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "nztim/simplehttp": "^1.2"
+    },
+    "autoload": {
+        "files": [
+            "helper.php"
+        ]
+    }
+}
