@@ -10,5 +10,11 @@
         "files": [
             "helper.php"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nztim/simplehttp"
+        }
+    ]
 }
