@@ -1,7 +1,6 @@
 {
-    "name": "nztim/geo",
+    "name": "nztim/geolocate",
     "description": "Access the geolocation API",
-    "license": "MIT",
     "require": {
         "php": ">=7.4",
         "nztim/simplehttp": "^1.2"
