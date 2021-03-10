@@ -27,6 +27,7 @@ function geolocate(string $ip, int $timeout = 5): string
         return '??';
     }
     if (!$response->isOk()) {
+        log_warning('comms', 'Geolocate helper failed, response code: ' . $response->status());
         return '??';
     }
     $result = str_limit(trim($response->body()), 2);
