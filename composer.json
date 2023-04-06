@@ -2,8 +2,8 @@
     "name": "nztim/geolocate",
     "description": "Access the geolocation API",
     "require": {
-        "php": ">=7.4|^8.0",
-        "nztim/simplehttp": "^2.0|^3.0"
+        "php": "^8.1",
+        "nztim/simplehttp": "^3.0"
     },
     "autoload": {
         "files": [
