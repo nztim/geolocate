@@ -1,0 +1,19 @@
+{
+    "name": "nztim/geolocate",
+    "require": {
+        "php": "^8.2",
+        "geoip2/geoip2": "^3.0",
+        "nztim/laravel-systems": "^4.0 || ^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NZTim\\Geolocate\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nztim/laravel-systems"
+        }
+    ]
+}
