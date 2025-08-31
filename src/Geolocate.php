@@ -19,7 +19,7 @@ class Geolocate
         $this->cache = $cache;
     }
 
-    public function cached(string $ip = null): string
+    public function cached(string|null $ip = null): string
     {
         if (!filter_var($ip, FILTER_VALIDATE_IP)) {
             $ip = $this->request->ip();
@@ -33,7 +33,7 @@ class Geolocate
         return $geo;
     }
 
-    public function fromIp(string $ip): string
+    public function fromIp(string|null $ip): string
     {
         if (app()->environment() !== 'production') {
             return 'NZ';
@@ -53,12 +53,12 @@ class Geolocate
         return $country->country->isoCode ?? '??';
     }
 
-    public function isNz(string $ip = null): bool
+    public function isNz(string|null $ip = null): bool
     {
         return $this->cached($ip) === 'NZ';
     }
 
-    public function overseas(string $ip = null): bool
+    public function overseas(string|null $ip = null): bool
     {
         return !$this->isNz($ip);
     }
