@@ -29,7 +29,7 @@ class Geolocate
             return $this->cache->get($key);
         }
         $geo = $this->fromIp($ip);
-        $this->cache->put($key, $geo, now()->addWeek());
+        $this->cache->put($key, $geo, carbon()->addWeek());
         return $geo;
     }
 
